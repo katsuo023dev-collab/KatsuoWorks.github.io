@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katsuo Works</title>
+<style>
+  :root {
+    --bg-dark: #121419;
+    --bg-dark2: #1a1d24;
+    --accent: #4285f5;
+    --text: #ebedf0;
+    --text-dim: #969baa;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(180deg, var(--bg-dark), var(--bg-dark2));
+    color: var(--text);
+    min-height: 100vh;
+  }
+  header {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 24px 40px;
+    text-align: center;
+  }
+  .mark {
+    width: 84px;
+    height: 64px;
+    margin: 0 auto 28px;
+    position: relative;
+  }
+  .mark::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 14px 0;
+    background: var(--text);
+    border-radius: 18px;
+  }
+  .mark::after {
+    content: "";
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    border-style: solid;
+    border-width: 14px 0 14px 22px;
+    border-color: transparent transparent transparent var(--accent);
+  }
+  .mark .tail {
+    position: absolute;
+    bottom: 0;
+    left: 14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 18px 6px 0 0;
+    border-color: var(--text) transparent transparent transparent;
+  }
+  h1 {
+    font-size: 2.6rem;
+    margin: 0 0 12px;
+    letter-spacing: 0.02em;
+  }
+  .tagline {
+    color: var(--text-dim);
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px 100px;
+  }
+  section {
+    margin-bottom: 56px;
+  }
+  h2 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: 14px;
+  }
+  p {
+    line-height: 1.7;
+    color: var(--text);
+  }
+  .card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 24px 28px;
+  }
+  .card h3 {
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+  }
+  .card p {
+    color: var(--text-dim);
+    margin: 0 0 14px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    padding: 3px 10px;
+    margin-bottom: 12px;
+  }
+  a.contact {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a.contact:hover {
+    text-decoration: underline;
+  }
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    padding-bottom: 40px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="mark"><span class="tail"></span></div>
+  <h1>Katsuo Works</h1>
+  <p class="tagline">Small, focused tools for game developers.</p>
+</header>
+
+<main>
+  <section>
+    <h2>About</h2>
+    <p>
+      Katsuo Works builds small, focused utilities that solve one problem
+      well and get out of your way. Based in Japan, developing for
+      developers worldwide.
+    </p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="card">
+      <span class="badge">Unity Asset Store</span>
+      <h3>PlayReport</h3>
+      <p>
+        One-key playtest feedback for Unity. Testers press F8 and you get a
+        GIF replay of the last few seconds of gameplay, a screenshot, the
+        console log and device info — delivered straight to your Discord.
+        No servers, no subscriptions.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      Questions, feature requests, support:
+      <a class="contact" href="mailto:katsuo040817@gmail.com">katsuo040817@gmail.com</a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2026 Katsuo Works
+</footer>
+
+</body>
+</html>
