@@ -158,18 +158,30 @@
 
     <section id="demo" class="wrap">
       <div class="demo-grid">
-        <div class="video-shell"><iframe src="https://www.youtube-nocookie.com/embed/BM0DVKOhCSo" title="PlayReport 23-second demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div class="video-shell"><iframe src="https://www.youtube-nocookie.com/embed/Z1W3J54kDeU" title="PlayReport gameplay reporting demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
         <div>
           <div class="eyebrow">Built for indie playtests</div>
           <h2>Useful evidence, not another dashboard.</h2>
           <div class="feature-list">
-            <div class="feature"><strong>Direct to your Discord</strong><span>Reports use your webhook. Your playtest data does not pass through a third-party backend.</span></div>
+            <div class="feature"><strong>Direct to your Discord</strong><span>Reports go from your game to Discord through your webhook. No Katsuo Works relay server or additional dashboard account is required.</span></div>
             <div class="feature"><strong>Automatic exception reports</strong><span>Unhandled exceptions can file a report with replay context even when a tester presses nothing.</span></div>
             <div class="feature"><strong>Add your own game state</strong><span>Attach level, seed, inventory or any other reproducibility data through a simple API.</span></div>
             <div class="feature"><strong>Tester UI in 10 languages</strong><span>The report window follows the player's OS language automatically.</span></div>
           </div>
           <div class="compat" aria-label="Compatibility"><span>UNITY 2021.3+</span><span>BUILT-IN</span><span>URP</span><span>HDRP</span><span>INPUT SYSTEM</span><span>IL2CPP</span></div>
         </div>
+      </div>
+    </section>
+
+    <section class="wrap" aria-labelledby="questions">
+      <div class="section-head"><div class="eyebrow">Before your next playtest</div><h2 id="questions">Know what you are getting.</h2></div>
+      <div class="feature-list">
+        <div class="feature"><strong>What does a report include?</strong><span>A GIF replay (10 seconds by default), screenshot, recent Console logs, device/build details and the tester's comment. Replay size and collection options are configurable.</span></div>
+        <div class="feature"><strong>Who is it for?</strong><span>Small Unity teams running private desktop playtests and already using Discord. Full C# source is included. Discord is the only built-in destination.</span></div>
+        <div class="feature"><strong>Does it replace crash monitoring?</strong><span>No. Automatic reports respond to Unity exception logs while the game is running. Native crashes and forced exits are not guaranteed to produce a report. Offline delivery is not included.</span></div>
+        <div class="feature"><strong>Where does the data go?</strong><span>Directly to Discord, which receives and stores the attachments. Tell testers what is collected. Use a dedicated webhook for private playtests; a webhook bundled in a game can be extracted.</span></div>
+        <div class="feature"><strong>Which platforms should I use?</strong><span>Start with desktop playtest builds and validate your target. WebGL, mobile and console support are not verified.</span></div>
+        <div class="feature"><strong>Need help before buying?</strong><span>Email <a href="mailto:katsuo040817@gmail.com">katsuo040817@gmail.com</a> with your Unity version and target platform. Please never include webhook URLs or private tester data.</span></div>
       </div>
     </section>
 
